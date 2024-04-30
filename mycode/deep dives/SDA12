@@ -1,0 +1,45 @@
+public class MultiDimensionalArrayExample {
+    public static void main(String[] args) {
+        int[][] array = new int[100][30]; // Declare an empty 100x30 multidimensional array
+
+        // Populate the array
+        int i = 0;
+        while (i < 100) {
+            int j = 0;
+            while (j < 30) {
+                array[i][j] = i * 30 + j; // Assign a unique value to each element
+                j++;
+            }
+            i++;
+        }
+
+        // Print odd-numbered values and numbers divisible by 8
+        System.out.println("Odd-numbered Values and Numbers Divisible by 8:");
+        i = 0;
+        while (i < 100) {
+            int j = 0;
+            while (j < 30) {
+                int value = array[i][j];
+                int remainder = value % 2;
+                switch (remainder) {
+                    case 0:
+                        remainder = value % 8;
+                        switch (remainder) {
+                            case 0:
+                                System.out.print(value + " ");
+                                break;
+                            default:
+                                break;
+                        }
+                        break;
+                    default:
+                        System.out.print(value + " ");
+                        break;
+                }
+                j++;
+            }
+            System.out.println(); // Move to the next line after each row
+            i++;
+        }
+    }
+}
