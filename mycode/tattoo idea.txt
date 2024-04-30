@@ -1,0 +1,13 @@
+tatto idea
+
+public class MyAll {
+    private String[] elements = {"Phahamo", "Leano"};
+
+    public String[] getElements() {
+        return elements;
+    }
+
+    public void printElements() {
+        System.out.println("Elements: " + Arrays.toString(elements));
+    }
+}
