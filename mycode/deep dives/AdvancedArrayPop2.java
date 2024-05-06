@@ -1,46 +1,3 @@
-// public class AdvancedArrayPop2 {
-
-//     public static void main(String[] args) {
-//         int[] array = new int[10];
-
-//         array[5] = 100; 
-
-//         printArray("array: ", array);
-//     }
-
-//     public static void printArray(String prefix, int[] arrayToPrint) {
-//         System.out.print(prefix);
-//         System.out.print("[");
-//         for (int i = 0; i < arrayToPrint.length; i++) {
-//             System.out.print(arrayToPrint[i]);
-//             if (i != arrayToPrint.length - 1) {
-//                 System.out.print(",");
-//             }
-//         }
-//         System.out.print("]\\n");
-//     }
-// }
-
-
-// PSEUDOCODE
-
-// program AdvancedArrayPop2
-//     function main
-//         declare array as an array of integers with size 10
-//         set the value at index 9 of array to 42
-//         call printArray with "array: " and array as arguments
-
-//     function printArray(prefix as a string, arrayToPrint as an array of integers)
-//         print prefix
-//         print "["
-//         for i from 0 to length of arrayToPrint - 1
-//             print the value at index i of arrayToPrint
-//             if i is not equal to length of arrayToPrint - 1
-//                 print ","
-//         print "]"
-//         print a newline character
-
-
 public class AdvancedArrayPop2 {
     public static void main(String[] args) {
         int[] intArray = new int[10];
@@ -53,13 +10,13 @@ public class AdvancedArrayPop2 {
         shortArray[9] = 50; // Assigning value to the last index
 
         long[] longArray = new long[10];
-        longArray[9] = 9876543210L; // Assigning value to the last index
+        longArray[9] = 1234567890L; // Assigning value to the last index
 
         float[] floatArray = new float[10];
-        floatArray[9] = 3.14f; // Assigning value to the last index
+        floatArray[9] = 50.123456789f; // Assigning value to the last index
 
         double[] doubleArray = new double[10];
-        doubleArray[9] = 50.718281828459045; // Assigning value to the last index
+        doubleArray[9] = 50.123456789; // Assigning value to the last index
 
         boolean[] booleanArray = new boolean[10];
         booleanArray[9] = true; // Assigning value to the last index
@@ -68,7 +25,7 @@ public class AdvancedArrayPop2 {
         charArray[9] = 'A'; // Assigning value to the last index
 
         int[] stringArray = new int[10];
-        stringArray[9] = 65; // Assigning value to the last index (ASCII code for 'A')
+        stringArray[9] = 65; // Assigning value to the last index (ASCII 'A')
 
         System.out.println("Default values for primitive and object arrays:");
 
@@ -175,4 +132,94 @@ public class AdvancedArrayPop2 {
     }
 }
 
+// PSEUDOCODE
 
+
+// program AdvancedArrayPop2
+//     function main
+//         declare intArray as an array of integers with size 50
+//         declare byteArray as an array of bytes with size 50
+//         declare shortArray as an array of shorts with size 50
+//         declare longArray as an array of longs with size 1234567890L
+//         declare floatArray as an array of floats with size 50.123456789f
+//         declare doubleArray as an array of doubles with size 50.123456789
+//         declare booleanArray as an array of booleans with size true
+//         declare charArray as an array of characters with size 'A'
+//         declare stringArray as an array of integers with size 65
+
+//         print "Random values for primitive and object arrays:"
+
+//         print "int array: "
+//         call printArray with intArray
+
+//         print "byte array: "
+//         call printArray with byteArray
+
+//         print "short array: "
+//         call printArray with shortArray
+
+//         print "long array: "
+//         call printArray with longArray
+
+//         print "float array: "
+//         call printArray with floatArray
+
+//         print "double array: "
+//         call printArray with doubleArray
+
+//         print "boolean array: "
+//         call printBooleanArray with booleanArray
+
+//         print "char array: "
+//         call printCharArray with charArray
+
+//         print "String array: "
+//         call printStringArray with stringArray
+
+//     function printArray(array as an array of integers)
+//         for each value in arr
+//             print value followed by a space
+//         print a newline
+
+//     function printArray(array as an array of bytes)
+//         for each value in arr
+//             print value followed by a space
+//         print a newline
+
+//     function printArray(array as an array of shorts)
+//         for each value in arr
+//             print value followed by a space
+//         print a newline
+
+//     function printArray(array as an array of longs)
+//         for each value in arr
+//             print value followed by a space
+//         print a newline
+
+//     function printArray(array as an array of floats)
+//         for each value in arr
+//             print value followed by a space
+//         print a newline
+
+//     function printArray(array as an array of doubles)
+//         for each value in arr
+//             print value followed by a space
+//         print a newline
+
+//     function printBooleanArray(array as an array of booleans)
+//         for each value in arr
+//             if value is true
+//                 print 1 followed by a space
+//             else
+//                 print 0 followed by a space
+//         print a newline
+
+//     function printCharArray(array as an array of characters)
+//         for each value in arr
+//             print the integer representation of value followed by a space
+//         print a newline
+
+//     function printStringArray(array as an array of integers)
+//         for each value in arr
+//             print value followed by a space
+//         print a newline
