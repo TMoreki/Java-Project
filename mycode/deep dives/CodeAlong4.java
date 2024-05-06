@@ -12,7 +12,8 @@ public class CodeAlong4 {
            switch (option) {
                case 1:
                    // Prompt the user for a row index and print that row
-                   int row = promptRow(arr);
+                   int row = promptRow(arr);1
+
                    if (row != -1) {
                        printArray(getRow(arr, row));
                    }
@@ -147,3 +148,145 @@ public class CodeAlong4 {
        return cellIndices;
    }
 }
+
+
+// PSEUDOCODE
+
+// START PROGRAM
+
+// DEFINE CLASS CodeAlong4
+//     DEFINE MAIN METHOD
+//         DECLARE a 2D array arr of size 10x10
+//         CALL populateArray(arr)
+
+//         DECLARE option
+
+//         LOOP WHILE option is not 4
+//             option = CALL printMenu()
+//             SWITCH option
+//                 CASE 1:
+//                     row = CALL promptRow(arr)
+//                     IF row is not -1
+//                         rowArray = CALL getRow(arr, row)
+//                         CALL printArray(rowArray)
+//                     END IF
+//                     EXIT CASE
+//                 CASE 2:
+//                     column = CALL promptColumn(arr)
+//                     IF column is not -1
+//                         columnArray = CALL getColumn(arr, column)
+//                         CALL printArray(columnArray)
+//                     END IF
+//                     EXIT CASE
+//                 CASE 3:
+//                     cellIndices = CALL promptCell(arr)
+//                     IF cellIndices is not null
+//                         cellValue = CALL getCell(arr, cellIndices[0], cellIndices[1])
+//                         IF cellValue is not -1
+//                             PRINT "Cell value: " + cellValue
+//                         END IF
+//                     END IF
+//                     EXIT CASE
+//                 CASE 4:
+//                     PRINT "Exiting..."
+//                     EXIT LOOP
+//                 DEFAULT:
+//                     PRINT "Invalid option, please try again."
+//             END SWITCH
+//         END LOOP
+//     END MAIN METHOD
+
+
+
+//     DEFINE populateArray METHOD
+//         DECLARE value = 1
+//         FOR each row in arr
+//             FOR each column in row
+//                 arr[row][column] = value
+//                 value = value + 1
+//             END FOR
+//         END FOR
+//     END populateArray METHOD
+
+//     DEFINE getRow METHOD
+//         IF row is out of bounds
+//             PRINT "Error: Row index out of bounds"
+//             RETURN null
+//         ELSE
+//             RETURN arr[row]
+//         END IF
+//     END getRow METHOD
+
+//     DEFINE getColumn METHOD
+//         IF column is out of bounds
+//             PRINT "Error: Column index out of bounds"
+//             RETURN null
+//         ELSE
+//             DECLARE columnArray of size arr.length
+//             FOR each row in arr
+//                 columnArray[row] = arr[row][column]
+//             END FOR
+//             RETURN columnArray
+//         END IF
+//     END getColumn METHOD
+
+//     DEFINE getCell METHOD
+//         IF row or column is out of bounds
+//             PRINT "Error: Row or column index out of bounds"
+//             RETURN -1
+//         ELSE
+//             RETURN arr[row][column]
+//         END IF
+//     END getCell METHOD
+
+//     DEFINE printArray METHOD
+//         FOR each value in arr
+//             PRINT value + " "
+//         END FOR
+//         PRINT a new line
+//     END printArray METHOD
+
+//     DEFINE printMenu METHOD
+//         PRINT menu options
+//         PROMPT user for choice
+//         RETURN user choice
+//     END printMenu METHOD
+
+//     DEFINE promptRow METHOD
+//         PROMPT user for row index
+//         WHILE row index is out of bounds
+//             PRINT error message
+//             PROMPT user for row index
+//         END WHILE
+//         RETURN row index
+//     END promptRow METHOD
+
+//     DEFINE promptColumn METHOD
+//         PROMPT user for column index
+//         WHILE column index is out of bounds
+//             PRINT error message
+//             PROMPT user for column index
+//         END WHILE
+//         RETURN column index
+//     END promptColumn METHOD
+
+//     DEFINE promptCell METHOD
+//         DECLARE cellIndices array of size 2
+//         PROMPT user for row index
+//         WHILE row index is out of bounds
+//             PRINT error message
+//             PROMPT user for row index
+//         END WHILE
+//         cellIndices[0] = row index
+//         PROMPT user for column index
+//         WHILE column index is out of bounds
+//             PRINT error message
+//             PROMPT user for column index
+//         END WHILE
+//         cellIndices[1] = column index
+//         RETURN cellIndices
+//     END promptCell METHOD
+
+// END CLASS CodeAlong4
+
+// END PROGRAM
