@@ -33,11 +33,22 @@
 // 	}
 // }
 
+// public class ArrayTest21{
+// 	public static void main(String[] args){
+// 		ArrayTest21 t = new ArrayTest21();
+// 		int[] arr = new int[10];
+// 		arr = t.subArray(arr,0,2);
+// 	}
+// 	public int[] subArray(int[] src, int start,int end){return src;}
+// }
+
 public class ArrayTest21{
 	public static void main(String[] args){
-		ArrayTest21 t = new ArrayTest21();
-		int[] arr = new int[10];
-		arr = t.subArray(arr,0,2);
-	}
-	public int[] subArray(int[] src, int start,int end){return src;}
+
+     int i = 0;
+     while(i <30){
+     System.out.println("hi");
+      i++;
+
+}
 }
