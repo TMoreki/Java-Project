@@ -1,15 +1,9 @@
-class Main{
-	public static void main(String[] args){
+public class Main {
+    public static void main(String[] args) {
+        // Create an instance of the outer class
+        OuterClass outer = new OuterClass();
 
-		Vampire vampire  = new Vampire();
-		//Warewolf warewolf = new warewolf();
-
-		//vampire.Talk();
-		//warewolf.Talk();
-
-		Enemy enemy = vampire;
-		enemy.Talk();
-
-
-	}
-} 
+        // Create an instance of the inner class using the outer instance
+        OuterClass.InnerClass inner = outer.new InnerClass();
+    }
+}
