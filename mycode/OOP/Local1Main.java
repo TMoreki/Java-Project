@@ -10,3 +10,4 @@ public class Local1Main {
         Local localInstance = new Local();
     }
 }
+
