@@ -1,0 +1,72 @@
+// Parent class
+class Animal {
+    private String name;
+    private int age;
+
+    // No-argument constructor
+    public Animal() {
+        // Calls the two-argument constructor with default values
+        this("Unknown", 0);
+    }
+
+    // Constructor with name
+    public Animal(String name) {
+        // Calls the two-argument constructor with a default age
+        this(name, 0);
+    }
+
+    // Constructor with name and age
+    public Animal(String name, int age) {
+        // Initialize instance variables
+        this.name = name;
+        this.age = age;
+        System.out.println("Animal constructor called");
+    }
+}
+
+// Child class
+class Dog extends Animal {
+    private String breed;
+
+    // Constructor calling parent's no-argument constructor
+    public Dog() {
+        // super(); is optional here, as it's implicitly added by the compiler if not present
+        // Calls the no-argument constructor of Animal
+        super();
+        this.breed = "Unknown";
+        System.out.println("Dog no-arg constructor called");
+    }
+
+    // Constructor calling parent's one-argument constructor
+    public Dog(String name) {
+        // Calls the one-argument constructor of Animal
+        super(name);
+        this.breed = "Unknown";
+        System.out.println("Dog one-arg constructor called");
+    }
+
+    // Constructor calling parent's two-argument constructor
+    public Dog(String name, int age, String breed) {
+        // Calls the two-argument constructor of Animal
+        super(name, age);
+        this.breed = breed;
+        System.out.println("Dog three-arg constructor called");
+    }
+}
+
+// Main class to test the code
+public class ConstructorRules {
+    public static void main(String[] args) {
+        System.out.println("Creating Dog with no arguments:");
+        // This will call Dog(), which calls Animal()
+        Dog dog1 = new Dog();
+
+        System.out.println("\nCreating Dog with name:");
+        // This will call Dog(String), which calls Animal(String)
+        Dog dog2 = new Dog("Buddy");
+
+        System.out.println("\nCreating Dog with name, age, and breed:");
+        // This will call Dog(String, int, String), which calls Animal(String, int)
+        Dog dog3 = new Dog("Max", 3, "Labrador");
+    }
+}
