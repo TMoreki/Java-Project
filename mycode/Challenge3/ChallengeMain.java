@@ -3,7 +3,10 @@ public class ChallengeMain {
 
             String block = "";
             String teacher ="";
-            String peTeacher = ""; 
+            String peTeacher = "";
+            String mathTeacher = "";
+            String ecoTeacher = "";
+            String bioTeacher = "";
             String gStr = "";
             String name = "";
          
@@ -23,12 +26,19 @@ public class ChallengeMain {
 
             if (gradeStr >= 0 && gradeStr <= 7) {
                 block = "Block B";
-                teacher = "Mrs Rhino";
-                peTeacher = "Mrs Zebra";
+                teacher = "Mrs Peters";
+                peTeacher = "Mrs Moreki";
             } else if (gradeStr >= 8 && gradeStr <= 12) {
                 block = "Block A";
-                teacher = "Mrs Lion";
-                peTeacher = "Mr Tiger";
+                teacher = "Mrs Mongale";
+                peTeacher = "Mr Swart";
+                mathTeacher = "Mrs Mabe";
+                ecoTeacher = "Mr Sehoole";
+                bioTeacher = "Ms Skosana";
+
+
+
+
             } else {
                 System.out.println("Error: Grade is invalid.");
                 return;
@@ -36,7 +46,10 @@ public class ChallengeMain {
         System.out.println("Welcome, " + name + "!");
         System.out.println("You are in " + block + ".");
         System.out.println("Your class teacher is " + teacher + ".");
-        System.out.println("Your peTeacher  " + peTeacher + ".");    
+        System.out.println("Your peTeacher  " + peTeacher + "."); 
+        System.out.println("Your mathTeacher " + mathTeacher + ".");
+        System.out.println("Your ecoTeacher  " + ecoTeacher + ".");
+        System.out.println("Your bioTeacher  " + bioTeacher + ".");   
             }
         }
         
